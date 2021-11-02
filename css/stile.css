@@ -1,30 +1,45 @@
+/* global */
+
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 
-
-main{
-  display: flex;
-  height: 80vh;
-  justify-content: center;
-  align-items: center;
-}
-
 .container{
   height: 500px;
   width: 500px;
-  background-color: red;
+}
+
+.text{
+  line-height: 500px;
 }
 
 .square{
-  width: calc(100% / 8);
-  height: calc(100% / 8);
+  width: calc(100% / 10);
+  height: calc(100% / 10);
   border: 1px solid black;
   float: left;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.square.easy{
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+}
+
+.square.medium{
+  width: calc(100% / 9 );
+  height: calc(100% / 9);
+}
+
+.square.hard{
+  width: calc(100% / 7 );
+  height: calc(100% / 7);
+}
+
   /* header */
   
 header{
@@ -32,7 +47,6 @@ header{
     height: 10vh;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
 }
 
 header .logo {
@@ -52,3 +66,24 @@ header .logo img{
 header .bottoni {
   margin: 0 10px;
 }
+
+/* main */
+
+main{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-color:#7EFED4;
+}
+
+ footer{
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p{
+  margin: 0 10px ;
+} 
