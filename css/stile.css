@@ -23,6 +23,12 @@ box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.square.clicked{
+  background-color: blue;
+  color: wheat;
 }
 
 .square.easy{
