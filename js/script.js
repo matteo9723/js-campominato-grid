@@ -47,19 +47,17 @@ play.addEventListener('click',function(){
     div.className = ('square');
     div.classList.add(sizeCaselle);
     div.innerHTML= i+1 ;
+    
     container.append(div);
+
+    div.addEventListener('click',function(){
+      this.classList.add('clicked');
+      console.log(div);
+    });
 
   }
 
   console.log(numeroCaselle);
 
 
-})
-
-const div = d
-
-div.addEventListener('click',function(){
-  div.classList.add('clicked');
-  console(div);
-})
-
+});
