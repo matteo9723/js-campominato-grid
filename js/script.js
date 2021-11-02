@@ -48,13 +48,18 @@ play.addEventListener('click',function(){
     div.classList.add(sizeCaselle);
     div.innerHTML= i+1 ;
     container.append(div);
-    
+
   }
 
   console.log(numeroCaselle);
 
 
 })
-const square = document.getElementsByClassName('square');
-console.log(div);
+
+const div = d
+
+div.addEventListener('click',function(){
+  div.classList.add('clicked');
+  console(div);
+})
 
